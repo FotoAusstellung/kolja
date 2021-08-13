@@ -5,7 +5,7 @@ var images = require.context("../../public/images", true);
 export class ImageField extends Component {
   render() {
     return (
-      <div class="image">
+      <div className="image">
         <img src={images(`./${this.props.image}.jpg`)} alt="" srcset="" />
       </div>
     );
